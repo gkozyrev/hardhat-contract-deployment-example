@@ -6,8 +6,10 @@ import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "./interfaces/IUniswapV2Router02.sol";
 import "./interfaces/IUniswapV2Factory.sol";
+import "./interfaces/IUniswapV2Pair.sol";
+import "./interfaces/IUniswapV2Router01.sol";
+import "./interfaces/IUniswapV2Router02.sol";
 
 contract DADDYFEG is Context, IERC20, Ownable {
     using SafeMath for uint256;
